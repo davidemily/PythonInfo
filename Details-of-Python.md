@@ -17,7 +17,9 @@ Types in Python can be created or altered. In fact, everything object in Python 
 # Classes
 Classes in Python are created by using the 'class' keyword, the class name, and then a colon before inserting everything needed in the class.
 For example:
-> class Car:
-> > def drive(self):
-> > > print("This car is being driven.")
+```
+class Car:
+  def drive(self):
+    print("This car is being driven.")
+```
 Creates a car class with the drive function.
