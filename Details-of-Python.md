@@ -23,3 +23,10 @@ class Car:
     print("This car is being driven.")
 ```
 Creates a car class with the drive function.
+
+To instantiate a new instance of the class, the user would create a variable and assign it to the class;:
+```
+x = Car()
+```
+This calls the '__init__()' function on the class. This function can be extended if the creator wanted the instance to do additional features, such as assign variable or run additional functions, in the instantiation period.
+To de-initialize a class in Python the developer can use the close function on an object. This will delete the reference to the object. If the developer wanted to reuse the object in a pool, the developer could modify the close function to just erase the data inside. 
