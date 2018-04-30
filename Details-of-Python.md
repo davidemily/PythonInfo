@@ -46,3 +46,8 @@ class obj:
   def attribute_setter(self, value):
     self.__attribute = value
  ```
+ 
+ # Interfaces / protocols
+ Python doesn't use interfaces or protocols, as it uses the idea of duck-typing. Duck-typing is applying the idea of "if it looks like a duck, it must be a duck", in programming. This comparison is done at runtime and is handled by the type checking. Generally if the object type and methods work, the interface will work; else a exception will be thrown.
+ 
+
