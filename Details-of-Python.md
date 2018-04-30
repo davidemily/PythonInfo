@@ -30,3 +30,19 @@ x = Car()
 ```
 This calls the '__init__()' function on the class. This function can be extended if the creator wanted the instance to do additional features, such as assign variable or run additional functions, in the instantiation period.
 To de-initialize a class in Python the developer can use the close function on an object. This will delete the reference to the object. If the developer wanted to reuse the object in a pool, the developer could modify the close function to just erase the data inside. 
+
+# Instance reference name in data type (class)
+Python uses the 'self' keyword to reference the name of the data type. Python is special in that self doesn't need to be added to the signature as each object recognizes the current instance as 'self'
+
+# Properties
+Using 'getters' and 'setters' aren't typically used in Python but can be utilized. The typical way is just to use plain attributes to pass the information and then to dereference the attribute using the 'del' function.
+However, getters and setters can be added to the code to make it consistent to other programming. These can be added using the 'property' decorator without altering the original code
+```
+class obj:
+  @property
+  def attribute(self):
+    return self.__attribute
+  @attribute.setter
+  def attribute_setter(self, value):
+    self.__attribute = value
+ ```
