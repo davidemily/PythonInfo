@@ -50,4 +50,13 @@ class obj:
  # Interfaces / protocols
  Python doesn't use interfaces or protocols, as it uses the idea of duck-typing. Duck-typing is applying the idea of "if it looks like a duck, it must be a duck", in programming. This comparison is done at runtime and is handled by the type checking. Generally if the object type and methods work, the interface will work; else a exception will be thrown.
  
-
+# Inheritance / extension
+Inheritance in Python is handled by inluding the parent in the parenthesis after a class declaration.
+```
+class Person(object):
+  def foo(self):
+  ...
+class Waiter(Person):
+  ...
+```
+In this example, Person is inheriting from Object and Waiter is inheriting from Person. A waiter can use the Person's foo method by using "super().foo()" or by calling it as "Person.greet(self)" from Waiter.
