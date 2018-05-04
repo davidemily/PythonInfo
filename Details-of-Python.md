@@ -83,3 +83,11 @@ a is b # returns False
 
 # Nul/Nil references
 Python uses the "None" singleton instead of Nul or Nil. Objects can be assigned to None.
+
+# Lambda
+Lambda functions were added to Python because of increased demand from Lisp programmers. Lambdas are easily assigned in Python:
+```
+f = lambda x, y : x + y
+f(1,1) # returns 2
+```
+This functional programming is especially useful with Python's list comprehension and is normally used with functions such as "map()", "filter()", and "reduce()"
