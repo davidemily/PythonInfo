@@ -91,3 +91,4 @@ f = lambda x, y : x + y
 f(1,1) # returns 2
 ```
 This functional programming is especially useful with Python's list comprehension and is normally used with functions such as "map()", "filter()", and "reduce()"
+In addition to lambdas, functions are treated as first-class objects and can be passed as an argument or return value to another function object.
