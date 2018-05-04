@@ -71,3 +71,12 @@ In addition, Python uses reference counting and garbage collection to maintain m
 Reference counting is the idea that an object needs to be maintained when the count of that object is greater than 0. 
 #### Garbage Collection
 Garbage collection is automatic in Python and happens when the code can no longer 'reach' an object. Examples of garbage collection are when "del" is used on an object or when an object is set equal to None(Null). Garbage collection is typically performed automatically but can be manually called by using "gc.collect()"
+
+# Comparisons of References and Values
+Python uses "==" and "is" for comparing references and values.  In Python, "==" refers to value equality. This is for checking if two objects have the same value. On the other hand, "is" refers to reference equality. This is used when checking if two references refer to the same object.
+```
+a = 500
+b = 500
+a == b # returns True
+a is b # returns False
+```
