@@ -107,3 +107,23 @@ theBroadcaster.onChange += myFunction()
 ```
 Please look at the associated documentation to choose which one may work best for different environments.
 
+# Singleton
+Singletons are less common in Python when compared to a language like Java. Python, by nature, does not have the "final" keyword that Java uses to enforce a singleton. Singleton can be made in Python though by using different methods, including creating a dictionary of "instances" and enforcing only one can be made.
+For example:
+```
+def singleton(cls):
+  instances = {}
+  def getInstance():
+    if cls not in instances:
+      instances[cls] = cls()
+    return instances[cls]
+  return getInstance
+```
+Using a pattern like that above enforces a psuedo final keyword as the function will return the current singleton if more than one singletons are attempted to be created.
+
+# Procedural Programming
+Python does support procedural programming. Python is one of the few object oriented languages that does not enforce the idea that code be written in a OO style. Utilizing procedural programming allows Python to be written using a 'step-by-step' style, similiar to programming in C or C++.
+
+# Functional Programming
+Python supports functional programming. The FP ability was later added to Python, which means it can be programmed in the same style as more popular functional languages such as Haskell and OCaml. Programming in a functional style allows Python to not save 'side effects', or functions that modify internal state. Programming in 'pure' functional programming normally is not done in Python though, but instead functional programming functions will be added in in support of other features.
+
