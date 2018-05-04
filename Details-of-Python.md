@@ -92,3 +92,18 @@ f(1,1) # returns 2
 ```
 This functional programming is especially useful with Python's list comprehension and is normally used with functions such as "map()", "filter()", and "reduce()"
 In addition to lambdas, functions are treated as first-class objects and can be passed as an argument or return value to another function object.
+
+# Listeners or Event Handlers
+Python's open source nature has led to a large number of different frameworks that handle events. The most popular include: pydispatcher, zope.event, EventHook, Event class, Pynotify, and louie. The different ways come with different benefits and difficulties.
+For example, the EventHook can be simply added to an existing class upon initialization:
+```
+class MyBroadcaster()
+  def __init__():
+    self.onChange = EventHook()
+
+theBroadcaster = MyBroadcaster()
+# add a listener to an event
+theBroadcaster.onChange += myFunction()
+```
+Please look at the associated documentation to choose which one may work best for different environments.
+
