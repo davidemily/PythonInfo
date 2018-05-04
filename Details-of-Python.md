@@ -60,3 +60,7 @@ class Waiter(Person):
   ...
 ```
 In this example, Person is inheriting from Object and Waiter is inheriting from Person. A waiter can use the Person's foo method by using "super().foo()" or by calling it as "Person.greet(self)" from Waiter.
+
+# Reflection
+Reflection refers to the ability of the language to tell attributes about objects that might be passed as parameters to a function. Python is dynamically typed so this ability is important. Using "type(obj)" will return the type of the object in question. Python also has other commands available to assist in reflection. Python uses the "Isinstance()" command to test if an object is an instance of a type or class. The "getattr()" command can return a value of an attribute of an object.
+
