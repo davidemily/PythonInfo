@@ -80,3 +80,6 @@ b = 500
 a == b # returns True
 a is b # returns False
 ```
+
+# Nul/Nil references
+Python uses the "None" singleton instead of Nul or Nil. Objects can be assigned to None.
