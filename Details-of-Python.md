@@ -127,3 +127,12 @@ Python does support procedural programming. Python is one of the few object orie
 # Functional Programming
 Python supports functional programming. The FP ability was later added to Python, which means it can be programmed in the same style as more popular functional languages such as Haskell and OCaml. Programming in a functional style allows Python to not save 'side effects', or functions that modify internal state. Programming in 'pure' functional programming normally is not done in Python though, but instead functional programming functions will be added in in support of other features.
 
+# Multithreading
+Python supports multithreading through different modules and libraries, most notably the "threading" module.
+```
+import threading
+t1 = threading.Thread(target, args)
+t1.start()
+t1.join()
+```
+Using multithreading allows large tasks to be split up into smaller tasks to be accomplished separately and takes advantage of a CPU's ability to handle multiple processes.
